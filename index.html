@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register & Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- creat list of register form -->
+
+  <div class="container" id="signup">
+      <h1 class="form_title">Register</h1>
+  <form action="" method="post">
+    <!-- firstname -->
+<div class="input_group">
+  <i class="fas fa-user"></i>
+<input type="text" name="firstname" id="fname" placeholder="First name">
+<label for="forfname">Firstname</label>
+</div>
+<!-- lastname -->
+<div class="input-group">
+  <i class="fas fa-user"></i>
+  <input type="text" name="lastname" id="lname" placeholder="last name">
+<label for="forlname">lastname</label>
+</div>
+<!-- email -->
+<div class="input_group">
+  <i class="fas fa-envelope"></i>
+<input type="email" name="email" id="email" placeholder="Email" required>
+<label for="forfname">Email</label>
+</div>
+<!-- password -->
+<div class="input_group">
+  <i class="fas fa-lock"></i>
+<input type="password" name="password" id="password" placeholder="password" required>
+<label for="forfname">password</label>
+</div>
+<input type="submit" value="sign up" class="btn" name="sign up">
+<p class="or">
+  -----------or----------
+</p>
+<div class="icons">
+<i class="fab fa-google"></i>
+<i class="fab fa-facebook"></i>
+
+</div>
+<div class="links">
+  <p>Already have account</p>
+  <button class="sign in button">sign in</button>
+</div>
+  </form>
+</div>
+  <!-- creat list of register form -->
+
+  <div class="container" id="signin">
+      <h1 class="form_title">sign in</h1>
+  <form action="" method="post">
+
+<!-- email -->
+<div class="input_group">
+  <i class="fas fa-envelope"></i>
+<input type="email" name="email" id="email" placeholder="Email" required>
+<label for="forfname">Email</label>
+</div>
+<!-- password -->
+<div class="input_group">
+  <i class="fas fa-lock"></i>
+<input type="password" name="password" id="password" placeholder="password" required>
+<label for="forfname">password</label>
+<p class="recover">
+<a href="#">Recover password</a>
+</p>
+</div>
+<input type="submit" value="sign in" class="btn" name="sign up">
+<p class="or">
+  -----------or----------
+</p>
+<div class="icons">
+<i class="fab fa-google"></i>
+<i class="fab fa-facebook"></i>
+
+</div>
+<div class="links">
+  <p>dont have account yet?</p>
+    <button class="signupbotton">sign up</button>
+</div>
+  </form>
+</div>
+
+
+</body>
+</html>
