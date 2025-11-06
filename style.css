@@ -107,12 +107,45 @@ input:focus~label,input:not(:placeholder-shown )~label {
     
 
 }
+/* icons  */
 .icons{
 text-align: center;
 }
-.icon i{
-    color: rgb(125, 125, 125);
+.icons i{
+    color: rgb(125, 125, 235);
     padding: 0.8rem 1.5rem;
-     border-radius:10px 
+     border-radius:10px ;
+     font-size: 10px;
+     cursor: pointer;
+    border: 2px solid #dfe9f5; 
+   margin: 0 15px;
+   transition: 1s;
+
+}
+.icons i:hover{
+    background: #07001f;
+    font-size: 1.6rem;
+    border: 2px solid rgb(125, 125, 235);
+}
+/* link  */
+.links{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4rem;
+    margin-top: 0.9rem;
+    font-weight: bold;
+
+}
+button{
+ color: rgb(125, 125, 235);
+ border: none;
+ background-color: transparent;
+ font-size: 1rem;
+ font-weight: bold;
+}
+button:hover{
+    text-decoration: underline;
+    color: blue;
+      transition: 1s;
 
 }
