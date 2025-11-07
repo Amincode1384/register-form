@@ -12,7 +12,7 @@
 
   <div class="container" id="signup" style="display: none;">
       <h1 class="form_title">Register</h1>
-  <form action="" method="post">
+  <form action="" method="post" action="register.php">
     <!-- firstname -->
 <div class="input_group">
   <i class="fas fa-user"></i>
@@ -49,7 +49,7 @@
 </div>
 <div class="links">
   <p>Already have account</p>
-  <button class="signinbutton">sign in</button>
+  <button class="signinbutton" id="signinbutton">sign in</button>
 </div>
   </form>
 </div>
@@ -57,7 +57,7 @@
 
   <div class="container" id="signin">
       <h1 class="form_title">sign in</h1>
-  <form action="" method="post">
+  <form action="" method="post" action="register.php">
 
 <!-- email -->
 <div class="input_group">

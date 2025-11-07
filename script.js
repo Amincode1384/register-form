@@ -7,15 +7,15 @@ const signInform=document.getElementById('signin');
 
 const signUpForm=document.getElementById('signup');
 
-// creat function 
+// creat function for signin and signup button
 
 signUpbutton.addEventListener('click',function(){
 
     signInform.style.display="none";
     signUpForm.style.display='block';
 })
-signUpbutton.addEventListener('click',function(){
- signUpForm.style.display='none';
+signInButton.addEventListener('click',function(){
+ signUpForm.style.display="none";
     signInform.style.display="block";
    
 })
