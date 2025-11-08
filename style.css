@@ -65,7 +65,7 @@ label{
 }
 
 input:focus~label,input:not(:placeholder-shown )~label {
-    top: _3em;
+    top: 3em;
     color: hsl(327, 92%, 21%);
     font-size: 15px;
 }
