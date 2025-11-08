@@ -38,15 +38,17 @@ if(isset($_POST['signin'])){
 // $result->num_rows > 0 yani "aya natije ye query khali nist?"
 
    if($result->num_rows>0){
-    Vaghti dar ebtedaye file PHP minevisi:
 
-`session_start();`
+//     Vaghti dar ebtedaye file PHP minevisi:
 
-PHP karhaye zir ra anjam mide:
+// `session_start();`
 
-1. barresi mikonad aya karbar az ghabl yek **session** darad ya na.
-2. agar darad → haman ra edame mide.
-3. agar nadarad → yeki jadid misazad va yek **ID** makhsoos be karbar midahad.
+// PHP karhaye zir ra anjam mide:
+
+// 1. barresi mikonad aya karbar az ghabl yek **session** darad ya na.
+// 2. agar darad → haman ra edame mide.
+// 3. agar nadarad → yeki jadid misazad va yek **ID** makhsoos be karbar midahad.
+
 
     session_start
 
