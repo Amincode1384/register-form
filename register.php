@@ -50,9 +50,19 @@ if(isset($_POST['signin'])){
 // 3. agar nadarad → yeki jadid misazad va yek **ID** makhsoos be karbar midahad.
 
 
-    session_start
+    session_start();
+//     Dar PHP, alamat -> yani dastresi be ozv-haye yek object (Object Access Operator).
+
+// Vaghti ke tu PHP ba object kar mikoni, baraye dastresi be variable-ha (Property) ya function-ha (Method) dakhel on object, az -> estefade mishe.
+    $row=$result->fetch_access();
+    $_SESSION['email']=$row['email'];
+    header("location:homepage.php");
+    exit();
 
    } 
+   else{
+    echo"Not found , Incorrect Email or password";
+   }
 }
 }
 
