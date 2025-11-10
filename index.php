@@ -12,7 +12,7 @@
 
   <div class="container" id="signup" style="display: none;">
       <h1 class="form_title">Register</h1>
-  <form action="" method="post" action="register.php">
+  <form  method="post" action="register.php">
     <!-- firstname -->
 <div class="input_group">
   <i class="fas fa-user"></i>
@@ -37,7 +37,7 @@
 <input type="password" name="password" id="password" placeholder="password" required>
 <label for="forfname">password</label>
 </div>
-<input type="submit" value="sign up" class="btn" name="sign up">
+<input type="submit" value="sign up" class="btn" name="signup">
 <p class="or">
   -----------or----------
   <!-- form of google and facebook  -->
@@ -57,7 +57,7 @@
 
   <div class="container" id="signin">
       <h1 class="form_title">sign in</h1>
-  <form action="" method="post" action="register.php">
+  <form  method="post" action="register.php">
 
 <!-- email -->
 <div class="input_group">
@@ -74,7 +74,7 @@
 <a href="#">Recover password</a>
 </p>
 </div>
-<input type="submit" value="sign in" class="btn" name="sign up">
+<input type="submit" value="sign in" class="btn" name="signin">
 <p class="or">
   -----------or----------
 </p>

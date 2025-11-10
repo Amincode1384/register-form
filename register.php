@@ -1,8 +1,10 @@
 <?php
+  session_start();
 include 'connect.php';
+
 // registerform
 // enter the information
-if(isset($_POST[signup])){
+if(isset($_POST['signup'])){
     $firstname=$_POST['firstname'];
     $lastname=$_POST['lastname'];
     $email=$_POST['email'];
@@ -19,9 +21,11 @@ if(isset($_POST[signup])){
 
     }
 else{
-    $insertQuery="INSERT INTO users (firstname,lastname,email,password) VALUES('$firstname','$lastname','$email','$password')"
-    if ($conn->query($insertquery)==TRUE){
+    $insertQuery="INSERT INTO users (firstname,lastname,email,password) VALUES('$firstname','$lastname','$email','$password')";
+    if ($conn->query($insertQuery)==TRUE){
         header("location:index.php");
+        exit();
+     
     }
     else{
         echo "ERROR:".$conn->error;
@@ -33,7 +37,8 @@ if(isset($_POST['signin'])){
     $password=$_POST['password'];
     $password=md5($password); 
     $sql="SELECT * FROM users WHERE email='$email'and password='$password'";
-    ChatGPT said:
+ 
+    // ChatGPT said:
 
 // $result->num_rows > 0 yani "aya natije ye query khali nist?"
 
@@ -50,11 +55,11 @@ if(isset($_POST['signin'])){
 // 3. agar nadarad → yeki jadid misazad va yek **ID** makhsoos be karbar midahad.
 
 
-    session_start();
+  
 //     Dar PHP, alamat -> yani dastresi be ozv-haye yek object (Object Access Operator).
 
 // Vaghti ke tu PHP ba object kar mikoni, baraye dastresi be variable-ha (Property) ya function-ha (Method) dakhel on object, az -> estefade mishe.
-    $row=$result->fetch_access();
+    $row=$result->fetch_assoc();
     $_SESSION['email']=$row['email'];
     header("location:homepage.php");
     exit();
