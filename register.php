@@ -17,7 +17,7 @@ if(isset($_POST['signup'])){
 
     $result=$conn->query($checkEmail);
     if($result->num_rows>0){
-        echo "Email Address Already Exists !";
+  header("location:email.php");
 
     }
 else{
@@ -68,7 +68,7 @@ if(isset($_POST['signin'])){
 
    } 
    else{
-    echo"Not found , Incorrect Email or password";
+ header("location:error.php");
    }
 }
 

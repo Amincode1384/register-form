@@ -17,16 +17,8 @@ include("connect.php");
     background: linear-gradient(to right,#e2e2e2,#c9d6ff);">
     <div class="div1">
         <p class="p1">
-            Hello:<?php
-          if(isset($_SESSION['email']))  {
-            $email=$_SESSION['email'];
-            $query=mysqli_query($conn,"SELECT users. * FROM users WHERE users.email='$email'"); 
-             while($row=mysqli_fetch_array($query)){
-
-                echo $row['firstname'].''.$row['lastname'];
-             }         }
-            ?>
-       :)
+          
+      this email already exist :)
         </p>
         <a href="logout.php">logout</a>
     </div>
