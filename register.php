@@ -31,12 +31,14 @@ else{
         echo "ERROR:".$conn->error;
     }
 }
+}
 // sign in 
 if(isset($_POST['signin'])){
-      $email=$_POST['email'];
+      $email =$_POST['email'];
     $password=$_POST['password'];
     $password=md5($password); 
     $sql="SELECT * FROM users WHERE email='$email'and password='$password'";
+    $result = $conn->query($sql);
  
     // ChatGPT said:
 
@@ -60,7 +62,7 @@ if(isset($_POST['signin'])){
 
 // Vaghti ke tu PHP ba object kar mikoni, baraye dastresi be variable-ha (Property) ya function-ha (Method) dakhel on object, az -> estefade mishe.
     $row=$result->fetch_assoc();
-    $_SESSION['email']=$row['email'];
+    $_SESSION['email']= $row['email'];
     header("location:homepage.php");
     exit();
 
@@ -69,6 +71,6 @@ if(isset($_POST['signin'])){
     echo"Not found , Incorrect Email or password";
    }
 }
-}
+
 
 ?>
