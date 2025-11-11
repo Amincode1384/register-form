@@ -46,4 +46,4 @@ $conn = mysqli_connect("localhost", "root", "", "your_database_name");
 
 5. Open the project in your browser:
 
-http://localhost/your_project_folder/
+(http://localhost/backend/php/register%20form/)
