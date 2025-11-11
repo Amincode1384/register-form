@@ -17,7 +17,7 @@ include("connect.php");
     background: linear-gradient(to right,#e2e2e2,#c9d6ff);">
     <div class="div1">
         <p class="p1">
-            plese inter the correct information😊
+            please inter the correct information😊
         </p>
            
         <a href="index.php">go to main page</a>
