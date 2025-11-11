@@ -30,7 +30,7 @@ This project demonstrates how to create, validate, and manage user accounts, inc
 
 1. Clone the repository:
 
-git clone https://github.com/YourUsername/YourRepositoryName.git
+git clone https://github.com/Amincode1384/register-form.git
 
 
 2. Import the provided SQL file into your phpMyAdmin or any MySQL database.
