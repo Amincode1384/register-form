@@ -4,11 +4,11 @@ include 'connect.php';
 
 // registerform
 // enter the information
-if(isset($_POST['signup'])){
-    $firstname=$_POST['firstname'];
-    $lastname=$_POST['lastname'];
-    $email=$_POST['email'];
-    $password=$_POST['password'];
+if(isset($_POST['نام تگ '])){
+    $(نام جدول دیتابیس)=$_POST['نام تگ '];
+    $(نام جدول دیتابیس)=$_POST['نام تگ '];
+    $(نام جدول دیتابیس)=$_POST['نام تگ '];
+    $(نام جدول دیتابیس)=$_POST['نام تگ '];
     $password=md5($password);
 // check about the email address 
     $checkEmail="SELECT * From users where email='$email'";
@@ -16,6 +16,7 @@ if(isset($_POST['signup'])){
     // `.query()` yek method az sheye **mysqli** ast ke yek dastoor **SQL** ra ejra mikonad.
 
     $result=$conn->query($checkEmail);
+    بررسی وجودیت ایمیل وجود داشته شده 
     if($result->num_rows>0){
   header("location:email.php");
 
@@ -24,6 +25,7 @@ else{
     $insertQuery="INSERT INTO users (firstname,lastname,email,password) VALUES('$firstname','$lastname','$email','$password')";
     if ($conn->query($insertQuery)==TRUE){
         header("location:index.php");
+        // با دستور پایین ما از اجرای ادامه دستور باز میداریم در صورت درست بودن 
         exit();
      
     }
@@ -33,10 +35,10 @@ else{
 }
 }
 // sign in 
-if(isset($_POST['signin'])){
-      $email =$_POST['email'];
-    $password=$_POST['password'];
-    $password=md5($password); 
+if(isset($_POST['نام تگ '])){
+      $(نام جدول دیتابیس)=$_POST['نام تگ '];
+    $(نام جدول دیتابیس)=$_POST['نام تگ '];
+  $(نام جدول دیتابیس)=md5($password); 
     $sql="SELECT * FROM users WHERE email='$email'and password='$password'";
     $result = $conn->query($sql);
  
